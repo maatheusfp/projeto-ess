@@ -12,14 +12,13 @@ const Add = async ({ id, cardNumber, name, expireDate, type, cvv }) => {
         cvv
     });
     return {
-        success: true,
-        message: "Card successfully registered",
-        data: response.data
-    };
-  } 
-  catch (error) {
-    throw error.response.data;
+      success: true,
+      message: 'Card successfully registered',
+      data: response.data
+    }
+  } catch (error) {
+    throw error.response.data
   }
-};
+}
 
-export default Add;
+export default Add

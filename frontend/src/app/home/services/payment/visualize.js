@@ -10,6 +10,6 @@ const Visualize = async (id) => {
     console.error(error);
     return "Error trying to access payment methods";
   }
-};
+}
 
-export default Visualize;
+export default Visualize

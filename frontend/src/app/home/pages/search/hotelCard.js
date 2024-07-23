@@ -17,10 +17,10 @@ const HotelCard = ({ hotel }) => {
   };
 
   if (!hotel) {
-    return <div>Invalid hotel data</div>;
+    return <div>Invalid hotel data</div>
   }
 
-  let image;
+  let image
   if (hotel.name === 'Morada do Mar') {
     image = MoradaDoMar;
   } else if (hotel.name === 'Pousada Maresia') {
@@ -43,7 +43,7 @@ const HotelCard = ({ hotel }) => {
         <p className='hotel-card-price'>{hotel.price ? `R$${hotel.price}` : 'No price available'}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HotelCard;
+export default HotelCard

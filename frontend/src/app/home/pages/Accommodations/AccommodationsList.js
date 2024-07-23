@@ -9,37 +9,37 @@ import EditAccommodationModal from './EditAccommodationModal.js';
 import './AccommodationsList.css';
 
 const AccommodationsList = () => {
-    const [accommodations, setAccommodations] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    const navigate = useNavigate();
+  const [accommodations, setAccommodations] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+  const navigate = useNavigate()
 
-    useEffect(() => {
-        const fetchAccommodations = async () => {
-            try {
-                const data = await list();
-                setAccommodations(data);
-                setLoading(false);
-            } catch (error) {
-                setError(error.message);
-                setLoading(false);
-            }
-        };
-
-        fetchAccommodations();
-    }, []);
-
-    const handlePublishClick = () => {
-        navigate('/publish');
-    };
-
-    if (loading) {
-        return <div>Loading...</div>;
+  useEffect(() => {
+    const fetchAccommodations = async () => {
+      try {
+        const data = await list()
+        setAccommodations(data)
+        setLoading(false)
+      } catch (error) {
+        setError(error.message)
+        setLoading(false)
+      }
     }
 
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
+    fetchAccommodations()
+  }, [])
+
+  const handlePublishClick = () => {
+    navigate('/publish')
+  }
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>
+  }
 
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure you want to delete this accommodation?')) {
@@ -93,4 +93,4 @@ const AccommodationsList = () => {
     );
 };
 
-export default AccommodationsList;
+export default AccommodationsList
