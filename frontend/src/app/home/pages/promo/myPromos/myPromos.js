@@ -74,7 +74,7 @@ const MyPromos = () => {
                   <Link to={`/promo/${promo.promoId}`} className='details-link'>Ver detalhes</Link>
                 </div>
                 <div className='promo-actions'>
-                  <MdDelete  className='lixeira' onClick={() => handleDeletePromo(promo.promoId)} />
+                <MdDelete className={`lixeira ${promo.promoName.replace(/\s+/g, '-').toLowerCase()}`} onClick={() => handleDeletePromo(promo.promoId)} />
                   <PopUp title='Editar Promoção' className={`edit-popup ${promo.promoName.replace(/\s+/g, '-').toLowerCase()}`}>
                     <ModalEditarPromo promo={promo} onClose={() => window.location.reload()} onUpdate={handleUpdatePromo} />
                   </PopUp>

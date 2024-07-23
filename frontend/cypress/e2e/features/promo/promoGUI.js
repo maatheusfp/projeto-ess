@@ -1,6 +1,8 @@
 // aqui é onde vão os testes de verdades, lidos pelo cypress
 // não diferenciar por scenarios, mas cada linha deve ser uma função livre
 // associada ao arquivo promoGUI.feature (?)
+// verificar lixeira
+
 import { And, Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
 
 // Scenario: Cadastrar uma promoção com sucesso
