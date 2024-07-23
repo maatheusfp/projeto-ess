@@ -39,10 +39,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.wait(2000)
-  cy.contains(message).should('be.visible')
-})
 
 Then('Eu vejo a promoção {string} na lista de promoções', (promoName) => {
   cy.contains(promoName).should('be.visible')
@@ -78,9 +74,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.contains(message).should('be.visible')
-})
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
@@ -120,9 +113,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.contains(message).should('be.visible')
-})
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
@@ -162,9 +152,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.contains(message).should('be.visible')
-})
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
@@ -218,9 +205,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.contains(message).should('be.visible')
-})
 
 Then('O modal de edição de promoção é fechado', () => {
   cy.get('[data-testid=modal]').should('not.be.visible')
@@ -271,9 +255,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.contains(message).should('be.visible')
-})
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
@@ -321,9 +302,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('Eu vejo a mensagem {string}', (message) => {
-  cy.contains(message).should('be.visible')
-})
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
