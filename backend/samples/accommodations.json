@@ -70,12 +70,7 @@
     "precoPorNoite": 80,
     "userId": "123",
     "ratingsId": [],
-    "finalGrade": null,
-    "desconto": "60",
-    "promoName": "60% OFF",
-    "promoId": "11",
-    "data_inicio": "2025-02-22",
-    "data_fim": "2025-03-22"
+    "finalGrade": null
   },
   {
     "id": "12",
@@ -109,11 +104,11 @@
     "nome": "Propriedade 13",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
-    "precoPorNoite": 420,
+    "precoPorNoite": 300,
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null,
-    "desconto": "30",
+    "desconto": 50,
     "promoName": "Prime Day",
     "promoId": "14",
     "data_inicio": "2024-11-14",

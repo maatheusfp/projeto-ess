@@ -28,7 +28,7 @@ const PopUp = ({ children, title, className }) => {
         onRequestClose={closeModal}
         style={{
           overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
           },
           content: {
             top: '50%',

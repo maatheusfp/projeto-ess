@@ -96,3 +96,23 @@ header {
   margin-left: 8px;
 }
 
+.lixeira {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.lixeira:hover {
+  fill: red;
+}
+
+.caneta {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.caneta:hover {
+  fill: darkgoldenrod;
+}
+
