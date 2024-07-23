@@ -16,7 +16,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
     And Eu vejo a promoção "Promoção de Natal" na lista de promoções
 
   Scenario: Cadastrar uma promoção sem sucesso por erro no campo de data
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Cadastrar Promoção"
     And Eu preencho o campo ID do Hotel com "10"
     And Eu preencho o campo Desconto com "10"
@@ -28,7 +28,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
     And Eu não vejo a promoção "Promoção de Natal" na página "/my-promos"
 
   Scenario: Cadastrar uma promoção sem sucesso por erro no campo de desconto
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Cadastrar Promoção"
     And Eu preencho o campo ID do Hotel com "10"
     And Eu preencho o campo Desconto com "150"
@@ -40,7 +40,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
     And Eu não vejo a promoção "Promoção de Natal" na página "/my-promos"
 
   Scenario: Cadastrar uma promoção sem sucesso por erro no campo de ID do Hotel
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Cadastrar Promoção"
     And Eu preencho o campo ID do Hotel com "0"
     And Eu preencho o campo Desconto com "10"
@@ -53,13 +53,13 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
 
   # Deletar promoção
   Scenario: Deletar uma promoção com sucesso
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Deletar" da promoção "Promoção de Ano Novo"
     Then Eu não vejo a promoção "Promoção de Ano Novo" na página "/my-promos"
 
   # Editar promoção
   Scenario: Editar uma promoção com sucesso
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Editar" da promoção "Promoção de Natal"
     Then O modal de edição de promoção é aberto
     And Eu preencho o campo ID do Hotel com "10"
@@ -72,7 +72,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
     And Eu vejo a promoção "Promoção de Natal" na página de promoções com ID do Hotel "10", Desconto "20", Data de Início "01/12/2024" e Data de Fim "25/12/2024"
 
   Scenario: Editar uma promoção sem sucesso por erro no campo de data
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Editar Promoção" da promoção "Promoção de Natal"
     Then O modal de edição de promoção é aberto
     And Eu preencho o campo ID do Hotel com "10"
@@ -86,7 +86,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
     And A promoção "Promoção de Natal" não é alterada
 
   Scenario: Editar uma promoção sem sucesso por erro no campo de desconto
-    # Given Eu estou na página "/my-promos"
+    Given Eu estou na página "http://localhost:3000/my-promos"
     When Eu clico no botão "Editar Promoção" da promoção "Promoção de Natal"
     Then O modal de edição de promoção é aberto
     And Eu preencho o campo ID do Hotel com "10"

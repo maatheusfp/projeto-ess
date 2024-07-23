@@ -45,6 +45,10 @@ Then('Eu vejo a promoção {string} na lista de promoções', (promoName) => {
 })
 
 // Scenario: Cadastrar uma promoção sem sucesso por erro no campo data
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
@@ -84,6 +88,10 @@ Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) =
 })
 
 // Scenario: Cadastrar uma promoção sem sucesso por erro no campo desconto
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
@@ -123,6 +131,10 @@ Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) =
 })
 
 // Scenario: Cadastrar uma promoção sem sucesso por erro no campo ID do Hotel
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
@@ -162,6 +174,10 @@ Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) =
 })
 
 //  Scenario: Deletar uma promoção com sucesso
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
   const className = promoName.replace(/\s+/g, '-').toLowerCase()
   cy.get('button.${className}').contains(buttonName).click()
@@ -172,6 +188,10 @@ Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) =
 })
 
 // Scenario: Editar uma promoção com sucesso
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
   const className = promoName.replace(/\s+/g, '-').toLowerCase()
   cy.get('button.${className}').contains(buttonName).click()
@@ -222,6 +242,10 @@ Then(
 )
 
 // Scenario: Editar uma promoção com erro de data
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
   const className = promoName.replace(/\s+/g, '-').toLowerCase()
   cy.get('button.${className}').contains(buttonName).click()
@@ -269,6 +293,10 @@ Then('A promoção {string} não é alterada', (promoName) => {
 })
 
 // Scenario: Editar uma promoção com erro de desconto
+Given('Eu estou na página {string}', (page) => {
+  cy.visit(page)
+})
+
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
   const className = promoName.replace(/\s+/g, '-').toLowerCase()
   cy.get('button.${className}').contains(buttonName).click()
