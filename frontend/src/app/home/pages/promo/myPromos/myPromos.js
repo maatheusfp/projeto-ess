@@ -48,7 +48,7 @@ const MyPromos = () => {
     <div>
       <NavBar />
       <div>
-        <header>
+        <header className='header-cadastro'>
           <h1>Minhas Promoções Cadastradas</h1>
           <div className='cadastrar-popup'>
             <PopUp title='Cadastrar Promoção'>

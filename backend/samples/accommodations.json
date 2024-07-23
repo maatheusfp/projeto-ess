@@ -67,10 +67,15 @@
     "nome": "Propriedade 4",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 10,
-    "precoPorNoite": 80,
+    "precoPorNoite": 72,
     "userId": "123",
     "ratingsId": [],
-    "finalGrade": null
+    "finalGrade": null,
+    "desconto": "10",
+    "promoName": "Dia das mães",
+    "promoId": "11",
+    "data_inicio": "2022-02-12",
+    "data_fim": "2022-03-12"
   },
   {
     "id": "12",
@@ -92,12 +97,7 @@
     "ratingsId": [
       "e7a2449b-f91f-4abc-9085-c90929928eff"
     ],
-    "finalGrade": null,
-    "desconto": 55,
-    "promoName": "Dia das mães",
-    "promoId": "13",
-    "data_inicio": "2003-01-22",
-    "data_fim": "2003-02-22"
+    "finalGrade": null
   },
   {
     "id": "14",
