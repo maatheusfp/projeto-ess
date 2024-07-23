@@ -92,23 +92,28 @@
     "nome": "Propriedade 13",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
-    "precoPorNoite": 299.99999999999994,
+    "precoPorNoite": 269.99999999999994,
     "userId": "123",
     "ratingsId": [
       "e7a2449b-f91f-4abc-9085-c90929928eff"
     ],
-    "finalGrade": null
+    "finalGrade": null,
+    "desconto": 10,
+    "promoName": "Dia dos Pais",
+    "promoId": "13",
+    "data_inicio": "2024-12-12",
+    "data_fim": "2024-12-15"
   },
   {
     "id": "14",
     "nome": "Propriedade 13",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
-    "precoPorNoite": 300,
+    "precoPorNoite": 480,
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null,
-    "desconto": 50,
+    "desconto": 20,
     "promoName": "Prime Day",
     "promoId": "14",
     "data_inicio": "2024-11-14",
