@@ -35,8 +35,6 @@ const HotelCard = ({ hotel }) => {
     image = Naiepe;
   }
 
-  const navigate = useNavigate();
-
   return (
     <div className='hotel-card' onClick={() => handleClick(hotel.name)}>
       <img className='hotel-card-image' src={image} alt='Hotel exemplo' />
