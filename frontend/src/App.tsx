@@ -18,8 +18,6 @@ import PublishAccommodation from './app/home/pages/Accommodations/PublishAccommo
 import PaymentPage from './app/home/pages/payment/visualize/paymentPage'
 import AddPaymentPage from './app/home/pages/payment/add/addPaymentPage'
 
-
-
 export default function App() {
   return (
     <Router>
@@ -31,7 +29,7 @@ export default function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/my-accommodations' element={<MyAccommodations />} />
         <Route path='/my-promos' element={<MyPromos />} />
-        <Route path='/sign-up' element={<SignUpPage/>} />
+        <Route path='/sign-up' element={<SignUpPage />} />
         <Route path='/search' element={<SearchPage />} />
         <Route path='/my-accommodations/list' element={<AccommodationsList />} />
         <Route path='/publish' element={<PublishAccommodation />} />

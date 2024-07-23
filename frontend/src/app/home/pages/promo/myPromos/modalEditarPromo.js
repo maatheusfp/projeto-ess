@@ -1,36 +1,36 @@
-import { useState } from 'react';
-import editarPromo from '../../../services/promo/editarPromo.js';
-import Button from '../../Compartilhado/button.js';
+import { useState } from 'react'
+import editarPromo from '../../../services/promo/editarPromo.js'
+import Button from '../../Compartilhado/button.js'
 
 const ModalEditarPromo = ({ promo, onClose, onUpdate }) => {
-  const [promoName, setPromoName] = useState(promo.promoName);
-  const [id, setId] = useState(promo.promoId);
-  const [desconto, setDesconto] = useState(promo.desconto);
-  const [data_inicio, setData_inicio] = useState(promo.data_inicio);
-  const [data_fim, setData_fim] = useState(promo.data_fim);
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [promoName, setPromoName] = useState(promo.promoName)
+  const [id, setId] = useState(promo.promoId)
+  const [desconto, setDesconto] = useState(promo.desconto)
+  const [data_inicio, setData_inicio] = useState(promo.data_inicio)
+  const [data_fim, setData_fim] = useState(promo.data_fim)
+  const [errorMessage, setErrorMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState('')
 
   const handleEditPromo = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const data = {
       promoName,
       id,
       desconto,
       data_inicio,
       data_fim
-    };
-    try {
-      await editarPromo(promo.promoId, data);
-      setSuccessMessage('Promoção editada com sucesso');
-      onUpdate(data);
-      setTimeout(() => {
-        onClose();
-      }, 2000);
-    } catch (error) {
-      setErrorMessage(error.response?.data?.error || 'Erro ao editar promoção: ' + error.message);
     }
-  };
+    try {
+      await editarPromo(promo.promoId, data)
+      setSuccessMessage('Promoção editada com sucesso')
+      onUpdate(data)
+      setTimeout(() => {
+        onClose()
+      }, 2000)
+    } catch (error) {
+      setErrorMessage(error.response?.data?.error || 'Erro ao editar promoção: ' + error.message)
+    }
+  }
 
   return (
     <div>
@@ -70,7 +70,7 @@ const ModalEditarPromo = ({ promo, onClose, onUpdate }) => {
         <button onClick={onClose}>Fechar</button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default ModalEditarPromo;
+export default ModalEditarPromo

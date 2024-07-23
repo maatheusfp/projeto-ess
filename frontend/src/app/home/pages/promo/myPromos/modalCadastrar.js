@@ -1,37 +1,36 @@
-import React, { useState } from 'react';
-import CadastrarPromo from '../../../services/promo/cadastrarPromo.js';
-import Button from '../../Compartilhado/button.js';
+import React, { useState } from 'react'
+import CadastrarPromo from '../../../services/promo/cadastrarPromo.js'
+import Button from '../../Compartilhado/button.js'
 
 const ModalCadastrar = ({ onClose, onUpdate }) => {
-  const [promoName, setPromoName] = useState('');
-  const [id, setId] = useState('');
-  const [desconto, setDesconto] = useState('');
-  const [data_inicio, setData_inicio] = useState('');
-  const [data_fim, setData_fim] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
-
+  const [promoName, setPromoName] = useState('')
+  const [id, setId] = useState('')
+  const [desconto, setDesconto] = useState('')
+  const [data_inicio, setData_inicio] = useState('')
+  const [data_fim, setData_fim] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState('')
 
   const handleCadastrarPromo = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const data = {
       promoName,
       id,
       desconto,
       data_inicio,
       data_fim
-    };
-    try {
-      await CadastrarPromo(data);
-      setSuccessMessage('Promoção cadastrada com sucesso');
-      onUpdate(data);
-      setTimeout(() => {
-        onClose();
-      }, 2000);
-    } catch (error) {
-      setErrorMessage(error.response?.data?.error || 'Erro ao cadastrar promoção');
     }
-  };
+    try {
+      await CadastrarPromo(data)
+      setSuccessMessage('Promoção cadastrada com sucesso')
+      onUpdate(data)
+      setTimeout(() => {
+        onClose()
+      }, 2000)
+    } catch (error) {
+      setErrorMessage(error.response?.data?.error || 'Erro ao cadastrar promoção')
+    }
+  }
 
   return (
     <div>
@@ -67,11 +66,11 @@ const ModalCadastrar = ({ onClose, onUpdate }) => {
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
         {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
         <br />
-        <Button nome="Salvar e Cadastrar" type='submit' />
+        <Button nome='Salvar e Cadastrar' type='submit' />
         <button onClick={onClose}>Fechar</button>
       </form>
     </div>
-  );
+  )
 }
 
-export default ModalCadastrar;
+export default ModalCadastrar

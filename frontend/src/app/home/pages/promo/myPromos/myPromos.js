@@ -7,6 +7,7 @@ import NavBar from '../../Compartilhado/navbar.js'
 import PopUp from '../../Compartilhado/popUp.js'
 import ModalCadastrar from './modalCadastrar.js'
 import ModalEditarPromo from './modalEditarPromo.js'
+import './stylePromo.css'
 
 const MyPromos = () => {
   const [promos, setPromos] = useState([])
@@ -47,10 +48,15 @@ const MyPromos = () => {
   return (
     <div>
       <NavBar />
-      <div className='main'>
-        <h1>My Promos Page</h1>
-        <p>Criar, editar e deletar promoções</p>
-
+      <div>
+        <header>
+          <h1>Minhas Promoções Cadastradas</h1>
+        <div className='cadastrar-popup'>
+          <PopUp title='Cadastrar Promoção'>
+            <ModalCadastrar onClose={() => window.location.reload()} onUpdate={handleUpdatePromo} />
+          </PopUp>
+        </div>
+        </header>
         <div className='promo-list'>
           {promos.length === 0 ? (
             <p>No promotions available.</p>
@@ -80,9 +86,6 @@ const MyPromos = () => {
             ))
           )}
         </div>
-        <PopUp title='Cadastrar Promoção'>
-        <ModalCadastrar onClose={() => window.location.reload()} onUpdate={handleUpdatePromo} />
-        </PopUp>
       </div>
     </div>
   )
