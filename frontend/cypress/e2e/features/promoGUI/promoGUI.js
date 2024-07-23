@@ -194,11 +194,9 @@ Given('Eu estou na página {string}', (page) => {
 })
 
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
-  const className = promoName.replace(/\s+/g, '-').toLowerCase();
-  cy.get(`.edit-popup.${className}`).contains(buttonName).click();
-});
-
-
+  const className = promoName.replace(/\s+/g, '-').toLowerCase()
+  cy.get(`.edit-popup.${className}`).contains(buttonName).click()
+})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -234,6 +232,7 @@ Then(
     cy.contains(data_fim).should('be.visible').should('have.text', data_fim)
   }
 )
+
 
 // Scenario: Editar uma promoção com erro de data
 Given('Eu estou na página {string}', (page) => {

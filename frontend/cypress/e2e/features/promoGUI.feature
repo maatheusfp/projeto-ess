@@ -60,7 +60,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
   # Editar promoção
   Scenario: Editar uma promoção com sucesso
     Given Eu estou na página "http://localhost:3000/my-promos"
-    When Eu clico no botão "Editar Promoção" da promoção "Prime Day"
+    When Eu clico no botão "Editar Promoção" da promoção "Dia das mães"
     And Eu preencho o campo ID do Hotel com "10"
     And Eu preencho o campo Desconto com "20"
     And Eu preencho o campo Nome da Promoção com "Promoção de Natal"
