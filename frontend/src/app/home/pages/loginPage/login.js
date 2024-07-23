@@ -3,6 +3,7 @@ import NavBar from '../Compartilhado/navbar.js'
 import login from '../../services/userAuth/login.js'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
+import ButtonSubmit from '../Compartilhado/buttonSubmit/buttonSubmit.js'
 
 const LoginPage = () => {
   const [email, setEmail] = useState('')
@@ -40,9 +41,7 @@ const LoginPage = () => {
               <label htmlFor='password'>Senha</label>
               <input type='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)} required />
             </div>
-            <button type='submit' className='login-button'>
-              Login
-            </button>
+            <ButtonSubmit nome='Login' className='login-button'/>
           </form>
         </div>
       </div>
