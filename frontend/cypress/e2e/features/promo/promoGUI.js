@@ -16,11 +16,23 @@ Then ('O modal de cadastro de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 
@@ -49,11 +61,23 @@ Then ('O modal de cadastro de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 
@@ -86,11 +110,23 @@ Then ('O modal de cadastro de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 
@@ -123,11 +159,23 @@ Then ('O modal de cadastro de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 
@@ -171,11 +219,23 @@ Then ('O modal de edição de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 
@@ -209,11 +269,23 @@ Then ('O modal de edição de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 
@@ -247,11 +319,23 @@ Then ('O modal de edição de promoção é aberto', () => {
     cy.get('[data-testid=modal]').should('be.visible');
 });
 
-And ('Eu preencho o campo ID do Hotel com {string}, o campor Desconto com {string}, o campo Nome da Promoção com {string}, o campo Data de Início com {string}, o campo Data de Fim com {string}', (id, desconto, promoName, data_inicio, data_fim) => {
+And('Eu preencho o campo ID do Hotel com {string}', (id) => {
     cy.get('input[name=id]').type(id);
+});
+
+And('Eu preencho o campo Desconto com {string}', (desconto) => {
     cy.get('input[name=desconto]').type(desconto);
+});
+
+And('Eu preencho o campo Nome da Promoção com {string}', (promoName) => {
     cy.get('input[name=promoName]').type(promoName);
+});
+
+And('Eu preencho o campo Data de Início com {string}', (data_inicio) => {
     cy.get('input[name=data_inicio]').type(data_inicio);
+});
+
+And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
     cy.get('input[name=data_fim]').type(data_fim);
 });
 

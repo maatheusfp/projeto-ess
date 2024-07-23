@@ -82,9 +82,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
     When Eu clico no botão "Salvar Edição"
     Then Eu vejo a mensagem "Promoção editada com sucesso!"
     And O modal de edição de promoção é fechado
-    And Eu vejo a promoção "Promoção de Natal" na página de promoções com
-      | ID do Hotel | Desconto | Data de Início | Data de Fim |
-      | 10          | 20       | 01/12/2024     | 25/12/2024  |
+    And Eu vejo a promoção "Promoção de Natal" na página de promoções com ID do Hotel "10", Desconto "20", Data de Início "01/12/2024" e Data de Fim "25/12/2024"
 
   Scenario: Editar uma promoção sem sucesso por erro no campo de data
     Given Eu estou na página "/my-promos"
