@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import NavBar from '../Compartilhado/navbar.js'
 import signUp from '../../services/userAuth/signUp.js'
+import ButtonSubmit from '../Compartilhado/buttonSubmit/buttonSubmit.js'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -69,9 +70,7 @@ const SignUpPage = () => {
               <label htmlFor='password'>Confirme a senha</label>
               <input type='password' id='confirmPass' value={confirmPassword} onChange={(e) => setConfirmPass(e.target.value)} required />
             </div>
-            <button type='submit' className='login-button'>
-              Cadastrar
-            </button>
+            <ButtonSubmit nome='Cadastrar' className='login-button'/>
           </form>
         </div>
       </div>
