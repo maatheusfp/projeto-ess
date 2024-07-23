@@ -180,7 +180,7 @@ Given('Eu estou na página {string}', (page) => {
 
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
   const className = promoName.replace(/\s+/g, '-').toLowerCase()
-  cy.get('button.${className}').contains(buttonName).click()
+  cy.get('.delete-button').contains(buttonName).click()
 })
 
 Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) => {

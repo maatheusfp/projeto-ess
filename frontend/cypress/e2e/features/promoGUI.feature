@@ -54,7 +54,7 @@ Feature: Cadastro e Manutenção de promoções (criar, deletar e editar)
   # Deletar promoção
   Scenario: Deletar uma promoção com sucesso
     Given Eu estou na página "http://localhost:3000/my-promos"
-    When Eu clico no botão "Deletar" da promoção "Promoção de Ano Novo"
+    When Eu clico no botão "Deletar" da promoção "Promoção de Natal"
     Then Eu não vejo a promoção "Promoção de Ano Novo" na lista de promoções
 
   # Editar promoção
