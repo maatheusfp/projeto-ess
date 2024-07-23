@@ -76,15 +76,15 @@ And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
+});
 
 When('Eu clico no botão {string}', (buttonName) => {
+  cy.wait(5000)
   cy.get('button').contains(buttonName).click()
-})
+});
 
 Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) => {
-  cy.contains(promoName).should('not.be.visible')
+  cy.contains(promoName).should('not.exist')
 })
 
 // Scenario: Cadastrar uma promoção sem sucesso por erro no campo desconto
