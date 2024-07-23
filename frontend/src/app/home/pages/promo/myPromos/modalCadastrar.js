@@ -57,12 +57,12 @@ const ModalCadastrar = ({ onClose, onUpdate }) => {
         <br />
         <label>
           Data de Início:
-          <input type='date' name='data_inicio' value={data_inicio} onChange={(e) => setData_inicio(e.target.value)} required />
+          <input type='text' name='data_inicio' value={data_inicio} onChange={(e) => setData_inicio(e.target.value)} required />
         </label>
         <br />
         <label>
           Data de Fim:
-          <input type='date' name='data_fim' value={data_fim} onChange={(e) => setData_fim(e.target.value)} required />
+          <input type='text' name='data_fim' value={data_fim} onChange={(e) => setData_fim(e.target.value)} required />
         </label>
         <br />
         <br />

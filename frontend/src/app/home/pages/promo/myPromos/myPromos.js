@@ -50,8 +50,8 @@ const MyPromos = () => {
       <div>
         <header className='header-cadastro'>
           <h1>Minhas Promoções Cadastradas</h1>
-          <div className='cadastrar-popup'>
-            <PopUp title='Cadastrar Promoção' className='modal-cadastro'>
+          <div>
+            <PopUp title='Cadastrar Promoção' >
               <ModalCadastrar onClose={() => window.location.reload()} onUpdate={handleUpdatePromo} />
             </PopUp>
           </div>

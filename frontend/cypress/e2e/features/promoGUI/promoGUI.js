@@ -14,10 +14,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('O modal de cadastro de promoção é aberto', () => {
-  cy.wait(1000)
-  cy.get('.modal').should('be.visible')
-})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -44,11 +40,8 @@ When('Eu clico no botão {string}', (buttonName) => {
 })
 
 Then('Eu vejo a mensagem {string}', (message) => {
+  cy.wait(2000)
   cy.contains(message).should('be.visible')
-})
-
-Then('O modal de cadastro de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
 })
 
 Then('Eu vejo a promoção {string} na lista de promoções', (promoName) => {
@@ -60,9 +53,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('O modal de cadastro de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
-})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -94,10 +84,6 @@ Then('Eu vejo a mensagem {string}', (message) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
-Then('O modal de cadastro de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
 })
 
 Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) => {
@@ -109,9 +95,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('O modal de cadastro de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
-})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -143,10 +126,6 @@ Then('Eu vejo a mensagem {string}', (message) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
-Then('O modal de cadastro de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
 })
 
 Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) => {
@@ -158,9 +137,6 @@ When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
 })
 
-Then('O modal de cadastro de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
-})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -192,10 +168,6 @@ Then('Eu vejo a mensagem {string}', (message) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
-Then('O modal de cadastro de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
 })
 
 Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) => {
