@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { IoClose } from 'react-icons/io5'
 import CadastrarPromo from '../../../services/promo/cadastrarPromo.js'
 import Button from '../../Compartilhado/button.js'
+import './stylePromo.css'
 
 const ModalCadastrar = ({ onClose, onUpdate }) => {
   const [promoName, setPromoName] = useState('')
@@ -34,6 +36,7 @@ const ModalCadastrar = ({ onClose, onUpdate }) => {
 
   return (
     <div>
+      <IoClose className='close-icon' onClick={onClose} />
       <h1>Cadastrar Promoção</h1>
       <br />
       <form onSubmit={handleCadastrarPromo}>
@@ -67,7 +70,6 @@ const ModalCadastrar = ({ onClose, onUpdate }) => {
         {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
         <br />
         <Button nome='Salvar e Cadastrar' type='submit' />
-        <button onClick={onClose}>Fechar</button>
       </form>
     </div>
   )

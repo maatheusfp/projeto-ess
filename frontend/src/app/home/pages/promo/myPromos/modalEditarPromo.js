@@ -1,6 +1,8 @@
-import { useState } from 'react'
-import editarPromo from '../../../services/promo/editarPromo.js'
-import Button from '../../Compartilhado/button.js'
+import { useState } from 'react';
+import { IoClose } from "react-icons/io5";
+import editarPromo from '../../../services/promo/editarPromo.js';
+import Button from '../../Compartilhado/button.js';
+import './stylePromo.css';
 
 const ModalEditarPromo = ({ promo, onClose, onUpdate }) => {
   const [promoName, setPromoName] = useState(promo.promoName)
@@ -33,32 +35,33 @@ const ModalEditarPromo = ({ promo, onClose, onUpdate }) => {
   }
 
   return (
-    <div>
+    <div className='modal-editar-promo'>
+      <IoClose className='close-icon' onClick={onClose} />
       <h1>Editar Promoção</h1>
       <br />
       <form onSubmit={handleEditPromo}>
         <label>
-          ID do Hotel:
+          ID do Hotel: 
           <input type='number' name='id' value={id} onChange={(e) => setId(e.target.value)} required />
         </label>
         <br />
         <label>
-          Desconto:
+          Desconto: 
           <input type='number' name='desconto' value={desconto} onChange={(e) => setDesconto(e.target.value)} required />
         </label>
         <br />
         <label>
-          Nome da Promoção:
+          Nome da Promoção: 
           <input type='text' name='promoName' value={promoName} onChange={(e) => setPromoName(e.target.value)} required />
         </label>
         <br />
         <label>
-          Data de Início:
+          Data de Início: 
           <input type='date' name='data_inicio' value={data_inicio} onChange={(e) => setData_inicio(e.target.value)} required />
         </label>
         <br />
         <label>
-          Data de Fim:
+          Data de Fim: 
           <input type='date' name='data_fim' value={data_fim} onChange={(e) => setData_fim(e.target.value)} required />
         </label>
         <br />
@@ -67,7 +70,6 @@ const ModalEditarPromo = ({ promo, onClose, onUpdate }) => {
         {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
         <br />
         <Button nome='Salvar Edição' type='submit' />
-        <button onClick={onClose}>Fechar</button>
       </form>
     </div>
   )

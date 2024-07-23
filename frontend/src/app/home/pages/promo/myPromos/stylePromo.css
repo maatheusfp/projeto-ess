@@ -116,3 +116,58 @@ header {
   fill: darkgoldenrod;
 }
 
+
+.modal-editar-promo {
+  padding: 15px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  align-self: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-bottom: 10px;
+}
+
+.close-icon:hover {
+  fill: red;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 8px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-top: 30px;
+}

@@ -36,7 +36,10 @@ const PopUp = ({ children, title, className }) => {
             right: 'auto',
             bottom: 'auto',
             marginRight: '-50%',
-            transform: 'translate(-50%, -50%)'
+            transform: 'translate(-50%, -50%)',
+            borderRadius: '10px',
+            padding: '20px',
+            
           }
         }}
         data-testid='modal'

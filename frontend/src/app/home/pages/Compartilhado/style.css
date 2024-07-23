@@ -50,6 +50,8 @@ button {
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 button:hover {
