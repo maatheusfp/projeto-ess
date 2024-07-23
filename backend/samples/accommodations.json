@@ -25,7 +25,7 @@
   },
   {
     "id": "3",
-    "nome": "Propriedade 3",
+    "nome": "Casa em Porto",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 8,
     "precoPorNoite": 100,
@@ -35,7 +35,7 @@
   },
   {
     "id": "4",
-    "nome": "Propriedade 4",
+    "nome": "Casa em Muro Alto",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 10,
     "precoPorNoite": 200,
@@ -45,10 +45,10 @@
   },
   {
     "id": "10",
-    "nome": "Propriedade 10",
+    "nome": "Casa em Gravatá",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 8,
-    "precoPorNoite": 3.2970900880723732,
+    "precoPorNoite": 1000,
     "userId": "123",
     "ratingsId": [
       "b8ad79c7-268d-40bc-89cc-17ab330c72ed",
@@ -59,30 +59,30 @@
   },
   {
     "id": "11",
-    "nome": "Propriedade 4",
+    "nome": "Chalé no Sertão",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 10,
-    "precoPorNoite": 72,
+    "precoPorNoite": 4000,
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null
   },
   {
     "id": "12",
-    "nome": "Propriedade 12",
+    "nome": "Apartamento em Paulista",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 8,
-    "precoPorNoite": 48,
+    "precoPorNoite": 480,
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null
   },
   {
     "id": "13",
-    "nome": "Propriedade 13",
+    "nome": "Apartamento em Nova Descoberta",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
-    "precoPorNoite": 269.99999999999994,
+    "precoPorNoite": 5000,
     "userId": "123",
     "ratingsId": [
       "e7a2449b-f91f-4abc-9085-c90929928eff"
@@ -91,7 +91,7 @@
   },
   {
     "id": "14",
-    "nome": "Propriedade 13",
+    "nome": "Barraca na Noruega",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
     "precoPorNoite": 480,
@@ -106,10 +106,10 @@
   },
   {
     "id": "15",
-    "nome": "Propriedade 15",
+    "nome": "Quarto no Rio",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
-    "precoPorNoite": 672,
+    "precoPorNoite": 6720,
     "userId": "123",
     "ratingsId": [
       "bf346223-e3fc-4806-a74f-52a995b7184b",
@@ -149,11 +149,11 @@
     "finalGrade": "3.75"
   },
   {
-    "id": 11,
-    "nome": "Ninho dos Pombinhos",
+    "id": 5,
+    "nome": "Quarto em SP",
     "quantidadeQuartos": "1",
     "lotacaoMaxima": "2",
-    "precoPorNoite": "42",
+    "precoPorNoite": "4200",
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null

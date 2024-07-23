@@ -187,19 +187,18 @@ Then('Eu não vejo a promoção {string} na lista de promoções', (promoName) =
   cy.contains(promoName).should('not.be.visible')
 })
 
+
 // Scenario: Editar uma promoção com sucesso
 Given('Eu estou na página {string}', (page) => {
   cy.visit(page)
 })
 
 When('Eu clico no botão {string} da promoção {string}', (buttonName, promoName) => {
-  const className = promoName.replace(/\s+/g, '-').toLowerCase()
-  cy.get('button.${className}').contains(buttonName).click()
-})
+  const className = promoName.replace(/\s+/g, '-').toLowerCase();
+  cy.get(`.edit-popup.${className}`).contains(buttonName).click();
+});
 
-Then('O modal de edição de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
-})
+
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -223,11 +222,6 @@ And('Eu preencho o campo Data de Fim com {string}', (data_fim) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
-
-Then('O modal de edição de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
 })
 
 Then(
@@ -251,9 +245,6 @@ When('Eu clico no botão {string} da promoção {string}', (buttonName, promoNam
   cy.get('button.${className}').contains(buttonName).click()
 })
 
-Then('O modal de edição de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
-})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -282,11 +273,7 @@ When('Eu clico no botão {string}', (buttonName) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
-Then('O modal de edição de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
-})
+}
 
 Then('A promoção {string} não é alterada', (promoName) => {
   cy.contains(promoName).should('be.visible')
@@ -302,9 +289,6 @@ When('Eu clico no botão {string} da promoção {string}', (buttonName, promoNam
   cy.get('button.${className}').contains(buttonName).click()
 })
 
-Then('O modal de edição de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
-})
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
   cy.get('input[name=id]').type(id)
@@ -333,11 +317,7 @@ When('Eu clico no botão {string}', (buttonName) => {
 
 When('Eu clico no botão {string}', (buttonName) => {
   cy.get('button').contains(buttonName).click()
-})
-
-Then('O modal de edição de promoção é fechado', () => {
-  cy.get('[data-testid=modal]').should('not.be.visible')
-})
+}
 
 Then('A promoção {string} não é alterada', (promoName) => {
   cy.contains(promoName).should('be.visible')

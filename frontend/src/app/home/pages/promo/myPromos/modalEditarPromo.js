@@ -4,7 +4,7 @@ import editarPromo from '../../../services/promo/editarPromo.js';
 import Button from '../../Compartilhado/button.js';
 import './stylePromo.css';
 
-const ModalEditarPromo = ({ promo, onClose, onUpdate }) => {
+const ModalEditarPromo = ({ promo, onClose, onUpdate, className}) => {
   const [promoName, setPromoName] = useState(promo.promoName)
   const [id, setId] = useState(promo.promoId)
   const [desconto, setDesconto] = useState(promo.desconto)
