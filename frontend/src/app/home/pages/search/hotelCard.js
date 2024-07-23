@@ -31,7 +31,7 @@ const HotelCard = ({ hotel }) => {
   const navigate = useNavigate();
 
   return (
-    <div className='hotel-card' onClick={() => navigate('/detalhes-da-acomodacao')}>
+    <div className='hotel-card' onClick={() => navigate(`/detalhes-da-acomodacao/${hotel.name}`)}>
       <img className='hotel-card-image' src={image} alt='Hotel exemplo' />
       <div className='hotel-card-content'>
         <h2 className='hotel-card-name'>{hotel.name || 'No name available'}</h2>
