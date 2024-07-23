@@ -15,7 +15,8 @@ When('Eu clico no botão {string}', (buttonName) => {
 })
 
 Then('O modal de cadastro de promoção é aberto', () => {
-  cy.get('[data-testid=modal]').should('be.visible')
+  cy.wait(1000)
+  cy.get('.modal').should('be.visible')
 })
 
 And('Eu preencho o campo ID do Hotel com {string}', (id) => {
