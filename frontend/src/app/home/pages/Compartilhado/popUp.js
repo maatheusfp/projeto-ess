@@ -43,6 +43,7 @@ const PopUp = ({ children, title, className }) => {
           }
         }}
         data-testid='modal'
+        // className='modal'
       >
         {children}
       </Modal>
