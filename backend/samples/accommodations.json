@@ -67,15 +67,15 @@
     "nome": "Propriedade 4",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 10,
-    "precoPorNoite": 72,
+    "precoPorNoite": 28.8,
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null,
-    "desconto": "10",
-    "promoName": "Dia das mães",
+    "desconto": "60",
+    "promoName": "60% OFF",
     "promoId": "11",
-    "data_inicio": "2022-02-12",
-    "data_fim": "2022-03-12"
+    "data_inicio": "22/08/2024",
+    "data_fim": "22/09/2024"
   },
   {
     "id": "12",
@@ -104,15 +104,15 @@
     "nome": "Propriedade 13",
     "quantidadeQuartos": 4,
     "lotacaoMaxima": 80,
-    "precoPorNoite": null,
+    "precoPorNoite": 336,
     "userId": "123",
     "ratingsId": [],
     "finalGrade": null,
-    "desconto": 100,
-    "promoName": "Prime Day",
+    "desconto": "30",
+    "promoName": "Dia das mães",
     "promoId": "14",
-    "data_inicio": "2024-11-14",
-    "data_fim": "2024-11-15"
+    "data_inicio": "22/08/2024",
+    "data_fim": "25/09/2024"
   },
   {
     "id": "15",
